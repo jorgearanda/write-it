@@ -1,32 +1,39 @@
 import React, { Component } from 'react';
-import './App.css';
+import LanguageSelector from './LanguageSelector';
+import { playText, stadiumText } from './i18n/Texts';
+import './styles/App.css';
+import sun from './assets/sun.png'
 
 class App extends Component {
+  state = {
+    language: 'EN',
+  };
+
+  handleLanguageChange = (language) => {
+    this.setState({ language });
+  }
+
   render() {
+    const { language } = this.state;
+
     return (
       <div className="App">
-        <div class="explore-wrapper">
-          <div class="explore">
-            Explore your stadium
+        <div className="explore-wrapper">
+          <div className="explore">
+            { stadiumText[language] }
           </div>
         </div>
-        <div class="play-wrapper">
-          <div class="play">
+        <div className="play-wrapper">
+          <div className="play">
             <div>
-              PLAY
+              { playText[language] }
             </div>
             <div>
-              <img src="sun.png" alt=""/>
+              <img src={ sun } alt=""/>
             </div>
           </div>
         </div>
-        <div class="language-wrapper">
-          <div class="language">
-            <div class="language-choice english">English</div>
-            <div class="language-choice french">En Français</div>
-            <div class="language-choice spanish">Español</div>
-          </div>
-        </div>
+        <LanguageSelector onLanguageSelection={ this.handleLanguageChange } />
       </div>
     );
   }

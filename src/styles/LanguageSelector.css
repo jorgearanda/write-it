@@ -1,28 +1,3 @@
-body {
-    background-color: rgba(185, 205, 253, 1.0);
-}
-
-.explore-wrapper {
-    text-align: center;
-}
-
-.explore {
-    color: rgba(172, 142, 0, 1.0);
-    display: inline-block;
-    font-size: 40px;
-}
-
-.play-wrapper {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.play {
-    color: rgba(122, 0, 0, 1.0);
-    display: inline-block;
-    font-size: 70px;
-}
-
 .language-wrapper {
     text-align: center;
 }
