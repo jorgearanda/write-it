@@ -3,5 +3,6 @@
 }
 
 a {
+  cursor: pointer;
   display: block;
 }

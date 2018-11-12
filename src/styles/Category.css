@@ -1,0 +1,15 @@
+.Category {
+    height: 60px;
+    padding: 20px;
+}
+
+.CategoryButton {
+    background-color: #eeaaff;
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: green;
+    font-size: 40px;
+    font-family: "Times New Roman";
+    height: 80px;
+    width: 400px;
+}

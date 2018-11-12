@@ -1,3 +1,12 @@
 .Levels {
   text-align: center;
 }
+
+.Header {
+    font-size: 40px;
+    margin: 30px;
+}
+
+.Footer {
+    margin: 30px;
+}

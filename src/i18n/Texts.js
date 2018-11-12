@@ -4,8 +4,14 @@ export const playText = {
   'FR': 'JOUER',
 };
 
-export const stadiumText = {
-  'EN': 'Explore your stadium',
-  'ES': 'Explora tu estadio',
-  'FR': 'Explore ton stade',
+export const trophyCaseText = {
+  'EN': 'Your Trophy Case',
+  'ES': 'Tus Trofeos',
+  'FR': 'Tes Trophées',
+}
+
+export const yourTrophiesText = {
+  'EN': 'Your trophies will show up here',
+  'ES': 'Tus trofeos van a estar aquí',
+  'FR': 'Tes trophées vont aller ici',
 }

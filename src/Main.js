@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LanguageSelector from './LanguageSelector';
-import { playText, stadiumText } from './i18n/Texts';
+import { playText, trophyCaseText } from './i18n/Texts';
 import './styles/Main.css';
 import sun from './assets/sun.png'
 
@@ -18,11 +18,14 @@ class Main extends Component {
 
     return (
       <div className="Main">
-        <div className="explore-wrapper">
+        <a
+          className="explore-wrapper"
+          href={ "/trophies/" + language }
+        >
           <div className="explore">
-            { stadiumText[language] }
+            { trophyCaseText[language] }
           </div>
-        </div>
+        </a>
         <a className="play-wrapper" href="/levels/">
           <div className="play">
             <div>
